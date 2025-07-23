@@ -289,7 +289,7 @@ export default function PatientsPage() {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">
-                      {patient.bloodType}
+                      {patient.bloodGroupType}
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -369,8 +369,8 @@ export default function PatientsPage() {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Blood Type</label>
                 <select
-                  name="bloodType"
-                  value={formData.bloodType}
+                  name="bloodGroupType"
+                  value={formData.bloodGroupType}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
