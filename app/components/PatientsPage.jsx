@@ -12,7 +12,7 @@ export default function PatientsPage() {
     name: "",
     email: "",
     phone: "",
-    bloodType: "",
+    bloodGroupType: "",
     age: "",
     medicalHistory: "",
     condition: "",
@@ -102,6 +102,7 @@ export default function PatientsPage() {
           admissionDate: formData.admissionDate,
           hospital: formData.hospital,
           medicalHistory: formData.medicalHistory,
+           address: formData.address || "Not provided",
         },
         {
     headers: {
