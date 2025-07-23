@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Heart, Eye, EyeOff } from "lucide-react"
-import axiosInstance from "../../redux/axiosInstance"
+
 
 export default function RegisterPage({ onRegister, onSwitchToLogin }) {
   const [formData, setFormData] = useState({
