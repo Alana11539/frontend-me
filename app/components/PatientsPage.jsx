@@ -102,7 +102,6 @@ export default function PatientsPage() {
           admissionDate: formData.admissionDate,
           hospital: formData.hospital,
           medicalHistory: formData.medicalHistory,
-           address: formData.address || "Not provided",
         },
         {
     headers: {
