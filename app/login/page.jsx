@@ -10,7 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Heart, Eye, EyeOff } from "lucide-react";
-import axiosInstance from "../../redux/axiosInstance";
+
 
 export default function LoginPage() {
   const router = useRouter();
