@@ -71,7 +71,7 @@ export default function PatientsPage() {
       name: "",
       email: "",
       phone: "",
-      bloodType: "",
+      bloodGroupType: "",
       age: "",
       medicalHistory: "",
       condition: "",
