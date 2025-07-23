@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import axios from "axios";
+import axiosInstance from "../../redux/axiosInstance";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Heart, Eye, EyeOff } from "lucide-react";
+import axiosInstance from "../../redux/axiosInstance";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -27,7 +29,7 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/admin/login", {
+      const response = await axiosInstance.post("/api/admin/login", {
         email: formData.email,
         password: formData.password,
       });
